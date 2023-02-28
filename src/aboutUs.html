@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title": "About Us"
+})
+<body>
+    <div class="preloader">
+        <img src="img/icons/icons.svg#Badge" alt="" class="preloader__img">
+      </div>
+    @@include('html/header.html')
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="hero" data-head-point id="top">
+                <div data-bg="img/hero-bg.jpg" class=" lazy hero__container">
+                    <div class="container">
+                        <div class="hero__content">
+                            <h1 data-aos="fade-up" data-aos-once="true" class="text__h1">
+                                Welcome to gericht
+                            </h1>
+                            <ul class="breadcrums">
+                                <li data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="breadcrums__item">
+                                    <a href="index.html" class="text__h5">Home</a>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="200" data-aos-once="true" class="breadcrums__item">
+                                    <a href="aboutUs.html" class="text__h5">About us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="section-2 history">
+                <div class="container">
+                    <div class="content__header-centered center aboutus-pages">
+                            <div data-aos="fade-up" data-aos-delay="100" class="text__h5 content__suptitle">
+                                Our history
+                              <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon content__suptitle_icon-centered">
+                            </div>
+                            <h2 data-aos="fade-up" class="text__h2 content__title">
+                                serving customers for over a decade
+                            </h2>
+                        </div>
+                        <div class="history__content">
+                            <div class="history-content__left">
+                                <p data-aos="fade-right" data-aos-delay="100" class="text__p history__p">
+                                    Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. 
+                                    Quis pharetra adipiscing ultrices 
+                                    vulputate posuere tristique. In sed 
+                                    odio nec aliquet eu proin mauris et.
+                                </p>
+                                <img data-src="img/aboutUS/aboutUs-history.jpg" class="lazy" alt="A lazy image">
+                            </div>
+                            <div class="history-content__right">
+                                <img data-src="img/aboutUS/aboutUs-history-1.jpg" class="lazy" alt="A lazy image">
+                                <div class="history-right__content">
+                                    <h3 data-aos="fade-up" class="text__h3 history__h3">
+                                        Over the years
+                                    </h3>
+                                    <div class="counter">
+                                        <div class="counter__column">
+                                            <h3 class="text__h3 counter__title">
+                                                <span class="counter__number">30</span>+
+                                                <img src="img/icons/icons.svg#Spoon" alt="" class="counter-title__spoon">
+                                            </h3>
+                                            <div class="text__h4">
+                                                Breakfast Options
+                                            </div>
+                                        </div>
+                                        <div class="counter__column">
+                                            <h3 class="text__h3 counter__title">
+                                                <span class="counter__number">30</span>+
+                                                <img src="img/icons/icons.svg#Spoon" alt="" class="counter-title__spoon">
+                                            </h3>
+                                            <div class="text__h4">
+                                                Breakfast Options
+                                            </div>
+                                        </div>
+                                        <div class="counter__column">
+                                            <h3 class="text__h3 counter__title">
+                                                <span class="counter__number">30</span>+
+                                                <img src="img/icons/icons.svg#Spoon" alt="" class="counter-title__spoon">
+                                            </h3>
+                                            <div class="text__h4">
+                                                Breakfast Options
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            
+             <!-- About Us pages -->
+             <section class="section section-1">
+                <div class="main__container decorate aboutus-decorate">
+                    <div class="container__without_padding">
+                        <div class="content__header-centered center aboutus-pages">
+                            <div data-aos="fade-up" data-aos-delay="100" class="text__h5 content__suptitle">
+                                About us
+                              <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon content__suptitle_icon-centered">
+                            </div>
+                            <h2 data-aos="fade-up" class="text__h2 content__title">
+                                Happy hourse with us
+                            </h2>
+                            <p data-aos="fade-up" data-aos-delay="200" class="text__p">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Quis pharetra adipiscing 
+                                ultrices vulputate posuere tristique. In sed 
+                                odio nec aliquet eu proin mauris et.
+                            </p>
+                        </div>
+                    </div>                  
+                </div>
+            </section>
+
+            <!-- Video -->
+            @@include('html/components/video.html')
+
+            <!-- Shefs word -->
+            @@include('html/components/shefs-word.html')
+
+            <!-- Testimony -->
+            @@include('html/components/testimony.html')
+
+            <!-- Gallery -->
+            @@include('html/components/gallery.html')
+            
+        </main>
+    </div>
+
+    @@include('html/footer.html')
+    
+    <script src="js/app.min.js"></script>
+</body>
+</html>

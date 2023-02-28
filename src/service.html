@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title": "Service"
+})
+<body>
+    <div class="preloader">
+        <img src="img/icons/icons.svg#Badge" alt="" class="preloader__img">
+    </div>
+    @@include('html/header.html')
+    <div class="wrapper">
+        <main class="main">
+            <section id="top" data-head-point class="hero">
+                <div data-bg="img/hero-bg.jpg" class=" lazy hero__container">
+                    <div class="container">
+                    
+                        <div class="hero__content">
+                            <h1 data-aos="fade-up" data-aos-once="true" class="text__h1">
+                                What we offer
+                            </h1>
+                            <ul class="breadcrums">
+                                <li data-aos="fade-up" data-aos-delay="100" class="breadcrums__item">
+                                    <a href="index.html" class="text__h5">Home</a>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="200" class="breadcrums__item">
+                                    <a href="service.html" class="text__h5">Our service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>   
+                </div>
+                
+            </section>
+
+
+            <!-- About Us pages -->
+            <section class="section section-2">
+                <div class="main__container decorate aboutus-decorate">
+                    <div class="container__without_padding">
+                        <div class="content__header-centered center aboutus-pages">
+                            <div data-aos="fade-up" data-aos-delay="100" class="text__h5 content__suptitle">
+                                Serving Quality
+                              <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon content__suptitle_icon-centered">
+                            </div>
+                            <h2 data-aos="fade-up" class="text__h2 content__title">
+                                We at Gericth are serving our customers for over a decade.
+                            </h2>
+                            <p data-aos="fade-up" data-aos-delay="200" class="text__p">
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Quis pharetra adipiscing 
+                                ultrices vulputate posuere tristique. In sed 
+                                odio nec aliquet eu proin mauris et.
+                            </p>
+                            <div class="content-btn__container">
+                                <a data-aos="zoom-in" data-aos-delay="300" href="#" class="btn">Read more</a>
+                                <a data-aos="zoom-in" data-aos-delay="400" href="#" class="btn">Contact us</a>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+            </section>
+            <!-- Menu -->
+            @@include('html/components/menu.html')
+
+            <!-- Reservation -->
+            @@include('html/components/reservation.html')
+
+            <!-- Happy hours -->
+            <section data-bg="img/happy.jpg" class="lazy fullscreen happy">
+                <div class="container">
+                    <div class="happy__content">
+                        <h2 class="happy__title">
+                            Happy hours
+                        </h2>
+                        <div class="happy__info">
+                            Monday - Friday (4:00 Pm - 7:00 pm)
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+        </main>
+    </div>
+    @@include('html/footer.html')
+    <script src="js/app.min.js"></script>
+</body>
+</html>

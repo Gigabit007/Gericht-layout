@@ -1,0 +1,109 @@
+// Подключение стилей для библиотек
+
+// Анимация при прокрутке
+@import 'libs/aos';
+
+// Календарь
+@import 'libs/datepicker';
+
+// Аккордион
+@import 'libs/handorgel';
+
+// Карты
+@import 'libs/map';
+
+// Модальные окна
+// @import 'libs/popUp';
+
+// Ползунки
+// @import 'libs/range';
+
+// Селекты
+@import 'libs/select';
+
+// Кастомный скролл
+// @import 'libs/simplebar';
+
+// Слайдер
+@import 'libs/slider';
+
+// Табы
+// @import 'libs/tabby';
+
+//  Подсказки
+// @import 'libs/tippy';
+
+
+body {
+    background-color: $mainColor;
+    color: #fff;
+    position: relative;
+    background-image: url(../img/body-bg.svg);
+    background-size: cover;
+    background-position-y: 5%;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+main.main {
+    flex: 1 1 auto;
+}
+
+body.lock {
+    overflow: hidden;
+}
+.main__container {
+    max-width: $maxWidthContainer;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.container {
+    max-width: $widthContainer;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.container__without_padding {
+    max-width: $containerWithoutPadding;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.fullscreen {
+    min-height: 100vh;
+}
+.section-1 {
+    padding: 128px 0;
+    @media (max-width: 1280px) {
+        padding: 96px 0;
+    }
+    @media (max-width: 991px) {
+        padding: 76px 0;
+    }
+    @media (max-width: 768px) {
+        padding: 64px 0;
+    }
+}
+.section-2 {
+    padding: 152px 0;
+    @media (max-width: 1380px) {
+        padding: 116px 0;
+    }
+    @media (max-width: 991px) {
+        padding: 100px 0;
+    }
+    @media (max-width: 768px) {
+        padding: 76px 0;
+    }
+}
+.section-bg {
+    background: url(../img/BG.jpg) no-repeat;
+    background-size: cover;
+}

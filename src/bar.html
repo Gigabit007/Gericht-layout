@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title": "Bar"
+})
+<body>
+     
+    <div class="preloader">
+        <img src="img/icons/icons.svg#Badge" alt="" class="preloader__img">
+    </div>
+  
+    <div class="wrapper">
+        @@include('html/header.html')
+        <main class="main">
+            <section id="top" data-head-point class="section hero-bar section-bg fullscreen">
+                <div class="main__container">
+                    <div class="container__without_padding">
+                        <div class="hero-bar__content">
+                            <div class="swiper hero-bar__slider ">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide hero-bar__slide">
+                                        <h1 data-aos="fade-up" data-aos-delay="200" class="hero-bar__title">
+                                            On the rocks
+                                        </h1>
+                                        <img loading="lazy" src="img/bar-hero/bar-hero.jpg" alt="" class="hero-bar__img">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="swiper-slide hero-bar__slide">
+                                        <h1 class="hero-bar__title">
+                                            On  rocks
+                                        </h1>
+                                        <img loading="lazy" src="img/bar-hero/bar-hero.jpg" alt="" class="hero-bar__img">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="swiper-slide hero-bar__slide">
+                                        <h1 class="hero-bar__title">
+                                             the rocks
+                                        </h1>
+                                        <img loading="lazy" src="img/bar-hero/bar-hero.jpg" alt="" class="hero-bar__img">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a data-scroll href="#reservation" class="scroll__btn scroll__btn-center">Scroll</a>
+                        </div>
+                        
+                    </div>
+                    <nav class="hashtag__nav hashtag__nav-bar">
+                        <ul class="hashtag__list">
+                          <li>
+                            <a href="bar.html" class="hashtag__navlink active">
+                              #Bar
+                            </a>
+                          </li>
+                          <li>
+                            <a href="index.html" class="hashtag__navlink">
+                              #Gerisct
+                            </a>
+                          </li>
+                        </ul>
+                    </nav>
+                    <div class="hero-bar__pagination"></div>
+                
+                 </div>
+                
+            </section>
+
+            
+
+            <!-- Reservation -->
+            @@include('html/components/reservation.html')
+
+            <!-- About -->
+            <section class="section-1 about-bar section-bg">
+                <div class="main__container decorate">
+                    <div class="container__without_padding">
+                        <div class="about-bar__content">
+                            <div data-aos="fade-up-rigth" data-aos-delay="100" class="about-bar__img">
+                                <img data-src="img/about/about-bar-1.jpg" alt="A lazy image" class="lazy">
+                            </div>
+                            <div class="about-bar__text">
+                                <img data-aos="fade-up" src="img/about/boaut-bar.jpg" alt="">
+                                <div class="about-content__header">
+                                    <div data-aos="fade-up" data-aos-delay="100" class="content__suptitle text__h5">
+                                      About us
+                                      <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon gallery__suptitle_icon">
+                                    </div>
+                                    <h2 data-aos="fade-up" class="content__title text__h2">
+                                        Food, Drinks, entertainment in one
+                                    </h2>
+                                    <p data-aos="fade-up" data-aos-delay="200"  class="text__p about-text__p">
+                                        Adipiscing tempus ullamcorper lobortis 
+                                        odio tellus arcu volutpat. Risus placerat 
+                                        morbi volutpat habitasse interdum mi 
+                                        aliquam In sed odio nec aliquet.
+                                    </p>
+                                    <a data-aos="zoom-in" data-aos-delay="300" href="aboutUs.html" class="btn">Know more</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Poison -->
+            <section class="section-2">
+                <div class="container">
+                    <div class="poison__content">
+                        <div class="content__header-centered">
+                            <div data-aos="fade-up" data-aos-delay="100" class="text__h5 content__suptitle">
+                                Wide Range to choose from
+                              <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon content__suptitle_icon-centered">
+                            </div>
+                            <h2 data-aos="fade-up" class="text__h2 content__title">
+                                What’s Your Poison?
+                            </h2>
+                        </div>
+                        <div class="poison__inner">
+                            <div data-aos="fade-up-left" class="poison__item">
+                                <a href="#">
+                                    <img data-src="img/poison/poison-beer.jpg" alt="A lazy image" class="lazy">
+                                    <div class="poison-item__text text__h3">Beer</div>
+                                </a>
+                            </div>
+                            <div data-aos="fade-up-left" class="poison__item">
+                                <a href="#">
+                                    <img data-src="img/poison/poison-beer.jpg" alt="A lazy image" class="lazy">
+                                    <div class="poison-item__text text__h3">Wine</div>
+                                </a>
+                            </div>
+                            <div data-aos="fade-up-left" class="poison__item">
+                                <a href="#">
+                                    <img data-src="img/poison/poison-beer.jpg" alt="A lazy image" class="lazy">
+                                    <div class="poison-item__text text__h3">Coctaile</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Happy hours -->
+            <section data-bg="img/happy.jpg" class="lazy fullscreen happy">
+                <div class="container">
+                    <div class="happy__content">
+                        <h2 data-aos="fade-up" class="happy__title">
+                            Happy hours
+                        </h2>
+                        <div data-aos="fade-up" data-aos-delay="100" class="happy__info">
+                            Monday - Friday (4:00 Pm - 7:00 pm)
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+
+            <!-- Special -->
+            @@include('html/components/special.html')
+
+            <!-- Findus -->
+            <section class="section-1 section-bg findus">
+                <div class="main__container decorate findus__decorate">
+                    <div class="container__without_padding">
+                        <div class="findus__content">
+                            <div class="findus__contact">
+                                <div class="content__header">
+                                    <div data-aos="fade-up" data-aos-delay="100" class="text__h5 content__suptitle">
+                                        Contact
+                                        <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon findus__suptitle_icon">
+                                    </div>
+                                    <h2 data-aos="fade-up" class="text__h2 content__title">
+                                        Find us
+                                    </h2>
+                                </div>
+                                <p data-aos="fade-up" data-aos-delay="200" class="text__p">
+                                    Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
+                                </p>
+                                <h5 data-aos="fade-up" data-aos-delay="300" class="text__h5 findus-content-title">
+                                    Opening hours
+                                </h5>
+                                <ul class="findus__list">
+                                    <li data-aos="fade-right" data-aos-delay="400" class="text__p findus-list__item">
+                                        Mon - Fri: 10:00 am - 02:00 am
+                                    </li>
+                                    <li data-aos="fade-right" data-aos-delay="400" class="text__p findus-list__item">
+                                        Mon - Fri: 10:00 am - 02:00 am
+                                    </li>
+                                </ul>
+                                <a data-aos="fade-right" data-aos-delay="500" href="contactUs.html" class="btn">Visit us</a>
+                            </div>
+                            <div data-aos="flip-left" data-aos-delay="100" class="findus__img">
+                                <img data-src="img/shefs/shefs-img.jpg" class="lazy" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html')
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

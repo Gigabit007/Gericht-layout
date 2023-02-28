@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Bar</title>
+</head>
+<body>
+     
+    <div class="preloader">
+        <img src="img/icons/icons.svg#Badge" alt="" class="preloader__img">
+    </div>
+  
+    <div class="wrapper">
+        <header class="header">
+    <div class="main__container">
+        <div class="header__body">
+            <a data-scroll href="#top" class="header__logo">
+                Gericht
+            </a>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a href="index.html" class="header__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="header-link__dropdown">
+                        <div class="header__link">Pages</div>
+                        <ul class="dropdown__list">
+                            
+                            <li class="dropdown__item">
+                                <a href="aboutUs.html">About Us</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="service.html">Our Service</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="team.html">Our Team</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contactUs.html" class="header__link">
+                            Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="header__link">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comingSoon.html" class="header__link">
+                            Landing
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <ul data-da=".header__menu,991,last" class="header__registration">
+                <li>
+                    <a href="comingSoon.html" class="registration__link">
+                        Log in / Registration
+                    </a>
+                </li>
+                
+                
+                <li>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="comingSoon.html" class="registration__link">
+                        Book Table
+                    </a>
+                </li>
+                
+            </ul>
+            <a href="#" id="burger" class="header__burger">
+                <span></span>
+            </a>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <section id="top" data-head-point class="section hero-bar section-bg fullscreen">
+                <div class="main__container">
+                    <div class="container__without_padding">
+                        <div class="hero-bar__content">
+                            <div class="swiper hero-bar__slider ">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide hero-bar__slide">
+                                        <h1 data-aos="fade-up" data-aos-delay="200" class="hero-bar__title">
+                                            On the rocks
+                                        </h1>
+                                        <img loading="lazy" src="img/bar-hero/bar-hero.jpg" alt="" class="hero-bar__img">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="swiper-slide hero-bar__slide">
+                                        <h1 class="hero-bar__title">
+                                            On  rocks
+                                        </h1>
+                                        <img loading="lazy" src="img/bar-hero/bar-hero.jpg" alt="" class="hero-bar__img">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="swiper-slide hero-bar__slide">
+                                        <h1 class="hero-bar__title">
+                                             the rocks
+                                        </h1>
+                                        <img loading="lazy" src="img/bar-hero/bar-hero.jpg" alt="" class="hero-bar__img">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a data-scroll href="#reservation" class="scroll__btn scroll__btn-center">Scroll</a>
+                        </div>
+                        
+                    </div>
+                    <nav class="hashtag__nav hashtag__nav-bar">
+                        <ul class="hashtag__list">
+                          <li>
+                            <a href="bar.html" class="hashtag__navlink active">
+                              #Bar
+                            </a>
+                          </li>
+                          <li>
+                            <a href="index.html" class="hashtag__navlink">
+                              #Gerisct
+                            </a>
+                          </li>
+                        </ul>
+                    </nav>
+                    <div class="hero-bar__pagination"></div>
+                
+                 </div>
+                
+            </section>
+
+            
+
+            <!-- Reservation -->
+            <section id="reservation" class="reservation section-2">
+    <div class="main__container decorate reservation__decorate">
+        <div class="container__without_padding">
+            <div class="reservation__content">
+                <div class="content__header-centered">
+                    <div data-aos="fade-up" data-aos-delay="100" class="text__h5 content__suptitle">
+                      Reservations
+                      <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon content__suptitle_icon-centered">
+                    </div>
+                    <h2 data-aos="fade-up"  class="text__h2 content__title">
+                      Book a table
+                    </h2>
+                </div>
+                <form action="#" id="reservation" class="reservation__form">
+                    <div class="reservation__form_container">
+                        
+                        <div data-aos="fade-right" data-aos-delay="100" data-aos-once="true" class="reservation__line">
+                            <select id="select-person" name="person"  class="reservation__select reservation__select_item">
+                                <option data-dispaly="select">1 Person</option>
+                                <option value="1">2 Person</option>
+                                <option value="2">3 Person</option>
+                                <option value="3">4 Person</option>
+                            </select>
+                        </div>
+                        
+                        <div data-aos="fade-right" data-aos-delay="300" data-aos-once="true" class="reservation__line">
+                            <input id="input-date" autocomplete="off" placeholder="12/05/2022" type="text" class="reservation__input">
+                        </div>
+
+                            
+                        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" class="reservation__line">
+                            <select id="select-time" name="time" class="reservation__select reservation__select_item">
+                                <option value="1">09:00 AM</option>
+                                <option value="2">10:00 AM</option>
+                                <option value="3">11:00 AM</option>
+                                <option value="4">12:00 AM</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    
+                    <button data-aos="zoom-in" data-aos-delay="300" data-aos-once="true" type="submit" class="btn btn-center">Explore more</button>
+                </form>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+            <!-- About -->
+            <section class="section-1 about-bar section-bg">
+                <div class="main__container decorate">
+                    <div class="container__without_padding">
+                        <div class="about-bar__content">
+                            <div data-aos="fade-up-rigth" data-aos-delay="100" class="about-bar__img">
+                                <img data-src="img/about/about-bar-1.jpg" alt="A lazy image" class="lazy">
+                            </div>
+                            <div class="about-bar__text">
+                                <img data-aos="fade-up" src="img/about/boaut-bar.jpg" alt="">
+                                <div class="about-content__header">
+                                    <div data-aos="fade-up" data-aos-delay="100" class="content__suptitle text__h5">
+                                      About us
+                                      <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon gallery__suptitle_icon">
+                                    </div>
+                                    <h2 data-aos="fade-up" class="content__title text__h2">
+                                        Food, Drinks, entertainment in one
+                                    </h2>
+                                    <p data-aos="fade-up" data-aos-delay="200"  class="text__p about-text__p">
+                                        Adipiscing tempus ullamcorper lobortis 
+                                        odio tellus arcu volutpat. Risus placerat 
+                                        morbi volutpat habitasse interdum mi 
+                                        aliquam In sed odio nec aliquet.
+                                    </p>
+                                    <a data-aos="zoom-in" data-aos-delay="300" href="aboutUs.html" class="btn">Know more</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Poison -->
+            <section class="section-2">
+                <div class="container">
+                    <div class="poison__content">
+                        <div class="content__header-centered">
+                            <div data-aos="fade-up" data-aos-delay="100" class="text__h5 content__suptitle">
+                                Wide Range to choose from
+                              <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon content__suptitle_icon-centered">
+                            </div>
+                            <h2 data-aos="fade-up" class="text__h2 content__title">
+                                What’s Your Poison?
+                            </h2>
+                        </div>
+                        <div class="poison__inner">
+                            <div data-aos="fade-up-left" class="poison__item">
+                                <a href="#">
+                                    <img data-src="img/poison/poison-beer.jpg" alt="A lazy image" class="lazy">
+                                    <div class="poison-item__text text__h3">Beer</div>
+                                </a>
+                            </div>
+                            <div data-aos="fade-up-left" class="poison__item">
+                                <a href="#">
+                                    <img data-src="img/poison/poison-beer.jpg" alt="A lazy image" class="lazy">
+                                    <div class="poison-item__text text__h3">Wine</div>
+                                </a>
+                            </div>
+                            <div data-aos="fade-up-left" class="poison__item">
+                                <a href="#">
+                                    <img data-src="img/poison/poison-beer.jpg" alt="A lazy image" class="lazy">
+                                    <div class="poison-item__text text__h3">Coctaile</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Happy hours -->
+            <section data-bg="img/happy.jpg" class="lazy fullscreen happy">
+                <div class="container">
+                    <div class="happy__content">
+                        <h2 data-aos="fade-up" class="happy__title">
+                            Happy hours
+                        </h2>
+                        <div data-aos="fade-up" data-aos-delay="100" class="happy__info">
+                            Monday - Friday (4:00 Pm - 7:00 pm)
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+
+            <!-- Special -->
+            <section class="section-2">
+    <div class="container">
+        <div class="content__header-centered">
+            <div data-aos="fade-up" data-aos-delay="100" class="text__h5 content__suptitle">
+                Menu that fits you palatte
+              <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon content__suptitle_icon-centered">
+            </div>
+            <h2 data-aos="fade-up" class="text__h2 content__title">
+              Today's special
+            </h2>
+        </div>
+
+        <div  class="special__content">
+            <div data-aos="flip-left" class="special__content_column">
+                <h3 class="text__h3 special__column_title">Wine & Beer</h3>
+                <ul class="special__column_list">
+                    <li class="special__column_item">
+                        <div class="special__item_head">
+                            <h5 class="special__item_name">Chapel Hill Shiraz</h5>
+                            <div class="special__item_cost">$56</div>
+                        </div>
+                        <ul class="special__item_description">
+                            <li class="special__description_title">AU</li>
+                            <li class="special__description_title">Bottle</li>
+                        </ul>
+                    </li>
+                    <li class="special__column_item">
+                        <div class="special__item_head">
+                            <h5 class="special__item_name">Catena Malbec</h5>
+                            <div class="special__item_cost">$59</div>
+                        </div>
+                        <ul class="special__item_description">
+                            <li class="special__description_title">AU</li>
+                            <li class="special__description_title">Bottle</li>
+                        </ul>
+                    </li>
+                    <li class="special__column_item">
+                        <div class="special__item_head">
+                            <h5 class="special__item_name">Catena Malbec</h5>
+                            <div class="special__item_cost">$59</div>
+                        </div>
+                        <ul class="special__item_description">
+                            <li class="special__description_title">AU</li>
+                            <li class="special__description_title">Bottle</li>
+                        </ul>
+                    </li>
+                    <li class="special__column_item">
+                        <div class="special__item_head">
+                            <h5 class="special__item_name">Catena Malbec</h5>
+                            <div class="special__item_cost">$59</div>
+                        </div>
+                        <ul class="special__item_description">
+                            <li class="special__description_title">AU</li>
+                            <li class="special__description_title">Bottle</li>
+                        </ul>
+                    </li>
+                    <li class="special__column_item">
+                        <div class="special__item_head">
+                            <h5 class="special__item_name">Catena Malbec</h5>
+                            <div class="special__item_cost">$59</div>
+                        </div>
+                        <ul class="special__item_description">
+                            <li class="special__description_title">AU</li>
+                            <li class="special__description_title">Bottle</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <img data-src="img/special.jpg" alt="A lazy image" class="lazy special__column_img">
+            <div data-aos="flip-right" class="special__content_column">
+                <h3 class="text__h3 special__column_title">Wine & Beer</h3>
+                <ul class="special__column_list">
+                    <li class="special__column_item">
+                        <div class="special__item_head">
+                            <h5 class="special__item_name">Chapel Hill Shiraz</h5>
+                            <div class="special__item_cost">$56</div>
+                        </div>
+                        <ul class="special__item_description">
+                            <li class="special__description_title">AU</li>
+                            <li class="special__description_title">Bottle</li>
+                        </ul>
+                    </li>
+                    <li class="special__column_item">
+                        <div class="special__item_head">
+                            <h5 class="special__item_name">Catena Malbec</h5>
+                            <div class="special__item_cost">$59</div>
+                        </div>
+                        <ul class="special__item_description">
+                            <li class="special__description_title">AU</li>
+                            <li class="special__description_title">Bottle</li>
+                        </ul>
+                    </li>
+                    <li class="special__column_item">
+                        <div class="special__item_head">
+                            <h5 class="special__item_name">Catena Malbec</h5>
+                            <div class="special__item_cost">$59</div>
+                        </div>
+                        <ul class="special__item_description">
+                            <li class="special__description_title">AU</li>
+                            <li class="special__description_title">Bottle</li>
+                        </ul>
+                    </li>
+                    <li class="special__column_item">
+                        <div class="special__item_head">
+                            <h5 class="special__item_name">Catena Malbec</h5>
+                            <div class="special__item_cost">$59</div>
+                        </div>
+                        <ul class="special__item_description">
+                            <li class="special__description_title">AU</li>
+                            <li class="special__description_title">Bottle</li>
+                        </ul>
+                    </li>
+                    <li class="special__column_item">
+                        <div class="special__item_head">
+                            <h5 class="special__item_name">Catena Malbec</h5>
+                            <div class="special__item_cost">$59</div>
+                        </div>
+                        <ul class="special__item_description">
+                            <li class="special__description_title">AU</li>
+                            <li class="special__description_title">Bottle</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a data-aos="zoom-in" href="eror.html" class="btn btn-center">View more</a>
+    </div>
+</section>
+
+            <!-- Findus -->
+            <section class="section-1 section-bg findus">
+                <div class="main__container decorate findus__decorate">
+                    <div class="container__without_padding">
+                        <div class="findus__content">
+                            <div class="findus__contact">
+                                <div class="content__header">
+                                    <div data-aos="fade-up" data-aos-delay="100" class="text__h5 content__suptitle">
+                                        Contact
+                                        <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon findus__suptitle_icon">
+                                    </div>
+                                    <h2 data-aos="fade-up" class="text__h2 content__title">
+                                        Find us
+                                    </h2>
+                                </div>
+                                <p data-aos="fade-up" data-aos-delay="200" class="text__p">
+                                    Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
+                                </p>
+                                <h5 data-aos="fade-up" data-aos-delay="300" class="text__h5 findus-content-title">
+                                    Opening hours
+                                </h5>
+                                <ul class="findus__list">
+                                    <li data-aos="fade-right" data-aos-delay="400" class="text__p findus-list__item">
+                                        Mon - Fri: 10:00 am - 02:00 am
+                                    </li>
+                                    <li data-aos="fade-right" data-aos-delay="400" class="text__p findus-list__item">
+                                        Mon - Fri: 10:00 am - 02:00 am
+                                    </li>
+                                </ul>
+                                <a data-aos="fade-right" data-aos-delay="500" href="contactUs.html" class="btn">Visit us</a>
+                            </div>
+                            <div data-aos="flip-left" data-aos-delay="100" class="findus__img">
+                                <img data-src="img/shefs/shefs-img.jpg" class="lazy" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="newslatter">
+    <div class="main__container decorate newslatter__decorate">
+        <div class="container__without_padding">
+            <div class="newslatter__top">
+                <div class="content__header-centered newslatter__title">
+                    <div data-aos="fade-up" data-aos-delay="100" class="text__h5 content__suptitle">
+                        Newslatter
+                      <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon content__suptitle_icon-centered">
+                    </div>
+                    <h2 data-aos="fade-up" class="text__h2">
+                        Subscribe to Our Newsletter
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <a data-aos="fade-up" data-scroll href="#top" class="scroll__btn scroll__btn-footer">Top</a>    
+    </div>
+
+</section>
+
+<footer class="section-bg">
+    
+    <div class="container ">
+        <div class="newslatter__bottom">
+            <p data-aos="fade-up" data-aos-delay="200" class="text__p">
+                And never miss latest Updates!
+            </p>
+            <form action="#" if  class="footer-form">
+                    
+                <div data-aos="fade-up-right" data-aos-once="true" class="form__input">
+                    <input id="footer-input" placeholder="Email Adress" type="text">
+                </div>
+                <button data-aos="fade-up-left" data-aos-once="true" type="submit" class="btn">Subscribe</button>
+            </form> 
+        </div>
+        
+        <div class="footer section-1">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <h4 data-aos="flip-down" data-aos-delay="200" class="footer-column__title text__h4">
+                        Contact us
+                    </h4>
+                    <ul class="footer-column__list">
+                        <li class="footer-list__item text__p">
+                            <a href="">9 W 53rd St, New York, NY 10019, USA</a>
+                        </li>
+                        <li class="footer-list__item text__p">
+                            <a href="tel:+12123441230">+1 212-344-1230</a> <br>
+                            <a href="tel:+12123441230">+1 212-344-1230</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <div class="content__header-centered">
+                        <h2 data-aos="flip-up" class="text__h2 content__title">
+                            Gericht 
+                        </h2>
+                        <div class="text__h5 content__suptitle-footer">
+                            "The best way to find yourself is to lose yourself in the service of others.”
+                          <img src="img/icons/icons.svg#Spoon" alt="Spoon" class="content__suptitle_icon content__suptitle_icon-centered">
+                        </div>
+                        <div class="footer-social__links">
+                            <a href="#" class="social__link">
+                                <img src="img/icons/icons.svg#Facebook" alt="">
+                            </a>
+                            <a href="#" class="social__link">
+                                <img src="img/icons/icons.svg#Twitter" alt="">
+                            </a>
+                            <a href="#" class="social__link">
+                                <img src="img/icons/icons.svg#Instagram" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h4 data-aos="flip-down" data-aos-delay="200" class="footer-column__title text__h4">
+                        Working hourse
+                    </h4>
+                    <ul class="footer-column__list">
+                        <li class="footer-list__item text__p">
+                            Monday-Friday: <br>
+                            08:00 am -12:00 am
+                        </li>
+                        <li class="footer-list__item text__p">
+                            Saturday-Sunday: <br>
+                            07:00am -11:00 pm
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright text__p">
+                2021 Gericht. All Rights reserved.
+            </div>
+        </div>
+            
+
+        
+    </div>
+</footer>
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

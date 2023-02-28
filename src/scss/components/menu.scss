@@ -1,0 +1,37 @@
+.menu__list {
+    padding: 260px 0;
+    @media (max-width: 1280px) {
+        padding: 195px 0;
+    }
+    @media (max-width: 991px) {
+        padding: 174px 0;
+    }
+    @media (max-width: 768px) {
+        padding: 130px 0;
+    }
+    @media (max-width: 551px) {
+        padding: 70px 0;
+    }
+}
+.menu {
+    background-size: cover;
+}
+.menu__list_item {
+    margin-bottom: 64px;
+    & a {
+        transition: all .2s linear;
+        color: #FFFFFF;
+        &:hover {
+            text-decoration-line: underline;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        margin-bottom: 48px;
+    }
+    @media screen and (max-width: 991px) {
+        margin-bottom: 32px;
+    }
+}
+.menu__decorate::before {
+    top: 5px;
+}

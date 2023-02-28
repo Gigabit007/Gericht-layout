@@ -1,0 +1,55 @@
+.hero {
+    padding-top: 120px;
+    @media (max-width: 991px) {
+        padding-top: 80px;
+    }
+    background-color: $mainColor;
+    
+}
+
+.hero__content {
+    display: flex;
+    min-height: 680px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.breadcrums {
+    display: flex;
+    gap: 40px;
+}
+.breadcrums__item {
+    position: relative;
+    &:not(:last-child)::after {
+        position: absolute;
+        content: '';
+        border-left: 2px solid $firstColor;
+        border-bottom: 2px solid $firstColor;
+        transform: rotate(-130deg);
+        top: 10px;
+        right: -24px;
+        width: 12px;
+        height: 11px;
+        
+    }
+    
+
+}
+.aboutus-pages {
+    max-width: 1130px;
+}
+.content-btn__container {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.aboutus-decorate::before {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: auto;
+}
+

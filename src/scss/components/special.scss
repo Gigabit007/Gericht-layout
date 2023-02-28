@@ -1,0 +1,96 @@
+.special__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    @media screen and (max-width: 1250px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+}
+.special__content_column {
+    max-width: 412px;
+    width: 100%
+}
+.special__column_img {
+    margin: 0 25px;
+    @media screen and (max-width: 1250px) {
+        display: none;
+    }
+}
+.special__column_title {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.special__column_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.special__item_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.special__item_name {
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(23);
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #DCCA87;
+}
+.special__item_cost {
+    font-family: 'Cormorant Upright';
+    font-weight: 700;
+    font-size: rem(23);
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background-color: #fff;
+        top: 50%;
+        right: 65px;
+        @media screen and (max-width: 440px) {
+            width: 80px;
+            right: 55px;
+        }
+        @media screen and (max-width: 350px) {
+            width: 60px;
+            right: 48px;
+        }
+    }
+}
+.special__item_description {
+    display: flex;
+    gap: 28px;
+}
+.special__description_title {
+    font-size: rem(16);
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #AAAAAA;
+    position: relative;
+    &:not(:first-child)::before {
+        content: '';
+        position: absolute;
+        height: 16px;
+        width: 1px;
+        background-color: #AAAAAA;
+        top: 6px;
+        left: -14px;
+        
+    }
+
+    
+}

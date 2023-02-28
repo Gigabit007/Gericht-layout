@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title": "Contact us"
+})
+<body>
+    <div class="preloader">
+        <img src="img/icons/icons.svg#Badge" alt="" class="preloader__img">
+    </div>
+    @@include('html/header.html')
+    <div class="wrapper">
+        <main class="main">
+            <section id="top" class="hero" data-head-point>
+                <div data-bg="img/hero-bg.jpg" class=" lazy hero__container">
+                    <div class="container">
+                        <div class="hero__content">
+                            <h1 data-aos="fade-up" data-aos-once="true" class="text__h1">
+                                Contact us
+                            </h1>
+                            <ul class="breadcrums">
+                                <li data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="breadcrums__item">
+                                    <a href="index.html" class="text__h5">Home</a>
+                                </li>
+                                <li data-aos="fade-up" data-aos-delay="200" data-aos-once="true" class="breadcrums__item">
+                                    <a href="contactUs.html" class="text__h5">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Map -->
+            <div class="section-2 map">
+                <div class="main__container decorate">
+                    <div class="container__without_padding">
+                        <div id="map" class="map__container"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact us form -->
+            <div class="section-1 section-bg">
+                <div class="container">
+                    <div class="contact__form">
+                        <form action="#" id="contact-form" class="contact-form__content">
+                            <div class="contact-form__dialgbox">
+                                <div class="contact-form__line ">
+                                    <input id="contact-name" type="text" placeholder="Full Name" class="text__h6 contac-form__input">
+                                </div>
+                                <div class="contact-form__line">
+                                    <input id="contact-email" type="text" placeholder="Email" class="text__h6 contac-form__input">
+                                </div>
+                                <div class="contact-form__line">
+                                    <textarea id="contact-message" placeholder="Message" class="text__h6 contact-form__textarea"></textarea>
+                                </div>
+                                <button class="btn">Subscribe</button>
+                            </div>
+                        </form>
+                        <div class="awards__img">
+                            <div data-aos="flip-left" class="awards__img_container">
+                                <img data-src="img/awards/awards.jpg" class="lazy" alt="A lazy image">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    @@include('html/footer.html')
+    <script src="js/app.min.js"></script>
+</body>
+</html>

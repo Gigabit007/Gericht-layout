@@ -1,0 +1,129 @@
+.content__header-centered {
+    text-align: center;
+    margin-bottom: 64px;
+}
+.content__suptitle_icon-centered {
+    margin: 0 auto;
+}
+.reservation__content {
+    background-color: #0c0c0c;
+    margin: 0 -32px;
+    padding: 48px 32px;
+    border: 1px solid rgba($color: #fff, $alpha: .2);
+    @media screen and (max-width: 1380px) {
+        margin: 0;
+    }
+}
+.reservation__form {
+    text-align: center;
+}
+.reservation__form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+    gap: 32px;
+    @media screen and (max-width: 991px) {
+        display: block;
+    }
+}
+.reservation__line {
+    width: 33%;
+    height: 60px;
+    @media screen and (max-width: 991px) {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+.reservation__select {
+    border: 1px solid #fff;
+    border-radius: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #AAAAAA;
+    margin-right: 32px;
+    @media screen and (max-width: 991px) {
+        margin: 0;
+    }
+    & .current {
+        font-family: 'Cormorant Upright';
+        font-weight: 600;
+        font-size: rem(16);
+        line-height: 175%;
+        letter-spacing: 0.04em;
+        color: #AAAAAA;
+    }
+    &.nice-select:after {
+        width: 13px;
+        height: 13px;
+        right: 20px;
+        margin-top: -9px;
+    }
+    & .nice-select-dropdown {
+        background: $mainColor;
+        border-radius: 0;
+        border: 1px solid #fff;
+        width: 100%;
+        position: relative;
+        z-index: 5;
+        & .focus {
+            background-color: $firstColor !important;
+            color: $mainColor;
+            border-radius: 0;
+        }
+    }
+}
+.nice-select .list {
+    position: relative;
+    z-index: 100;
+    background-color: $mainColor;
+}
+.reservation__input {
+    display: block !important;
+    border: 1px solid #fff;
+    border-radius: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #AAAAAA;
+    padding-left: 16px; 
+    font-family: 'Cormorant Upright';
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #AAAAAA; 
+    position: relative;
+    top: 2px;
+    &::placeholder {
+        font-family: 'Cormorant Upright';
+        font-weight: 600;
+        font-size: rem(16);
+        line-height: 175%;
+        letter-spacing: 0.04em;
+        color: #AAAAAA; 
+    }
+    @media screen and (max-width: 991px) {
+        width: 100%;
+        margin: 0;
+    }
+}
+.datepicker-picker {
+    background-color: $mainColor !important;
+    border: 1px solid #fff;
+    border-radius: 0;
+    top: 0;
+}
+.datepicker-input.in-edit {
+    border-color: #fff;
+}
+.reservation__decorate::before {
+    right: 0;
+    left: auto;
+    top: -160px;
+}

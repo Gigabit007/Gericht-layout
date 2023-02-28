@@ -1,0 +1,57 @@
+.map {
+ background-color: rgba($color: #a0a0a0
+ , $alpha: .1);
+}
+.map__container {
+    height: 500px;
+    border: 3px solid $firstColor;
+}
+.contact__form {
+    display: flex;
+    gap: 32px;
+    @media (max-width:991px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+    @media (max-width:768px) {
+        gap: 32px;
+    }
+}
+.contact-form__content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    @media (max-width:991px) {
+        width: 75%;
+    }
+    @media (max-width:768px) {
+        width: 100%;
+    }
+}
+.contact-form__dialgbox {
+    width: 100%;
+}
+.contact-form__line {
+    width: 100%;
+    margin-bottom: 32px;
+    
+}
+.contac-form__input {
+    padding: 16px 0 16px 19px;
+    background-color: transparent;
+    border-radius: none;
+    border: 1px solid #F5EFDB;
+    height: 60px;
+    width: 100%;
+}
+.contact-form__textarea {
+    padding: 16px 0 16px 19px;
+    background-color: transparent;
+    border-radius: none;
+    border: 1px solid #F5EFDB;
+    min-height: 140px;
+    // max-width: 635px;
+    max-width: 100%;
+    width: 100%;
+}

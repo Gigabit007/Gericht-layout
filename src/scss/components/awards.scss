@@ -1,0 +1,82 @@
+.awards__content {
+    display: block;
+    overflow: hidden;
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 32px; 
+    }
+}
+.awards__text, .awards__img {
+    width: 100%;
+    @media screen and (min-width: 1280px) {
+        width: 50%; 
+    }
+}
+.awards__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 1280px) {
+        & .content__header {
+            text-align: center; 
+        }
+    }
+}
+.awards__img {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1280px) {
+        justify-content: end; 
+    }
+}
+.awards__img_container {
+    position: relative;
+    padding-left: 87px;
+    @media screen and (max-width: 551px) {
+        padding-left: 45px;
+    }
+    &::before {
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        content: "G";
+        font-family: "Cormorant Upright";
+        font-style: normal;
+        font-weight: 700;
+        font-size: rem(600);
+        color: rgba($color: #fafafa, $alpha: .7);
+        z-index: 1;
+        @media (max-width: 551px) {
+            font-size: rem(500);
+        }
+        @media (max-width: 450px) {
+            font-size: rem(400);
+        }
+    }
+}
+.awards__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 64px;
+    align-self: center;
+    margin-top: 32px;
+    @media screen and (max-width: 1280px) {
+        margin-bottom: 64px;
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+.awards__item {
+    display: flex;
+}
+.awards__icon {
+    width: 80px;
+    grid-template: 80px;
+    margin-right: 32px;
+}
+.awards__description_title {
+    color: #DCCA87;
+}
+

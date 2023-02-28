@@ -1,0 +1,76 @@
+.comingSoon {
+    
+}
+.comingsoon__content {
+    padding-top: 150px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.content__container {
+    max-width: 920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comingSoon__header {
+    max-width: 740px;
+    margin-bottom: 40px;
+}
+.comingSoon__timer {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    gap: 32px;
+}
+.timer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+.timer-column__title {
+    color: #fff;
+}
+.comingSoon__copyright {
+    padding: 32px;
+    
+}
+.decorate__comingSoon {
+    &::before {
+        bottom: 40px;
+        top: auto;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        background: url(../img/icons/icons.svg#Badge);
+        width: 146px;
+        height: 150px;
+        background-size: cover;
+        top: 250px;
+        right: 0;
+        animation: rotateBadge 15s linear infinite;
+        @media (max-width: 1380px) {
+            display: none;
+        }
+    }
+}
+.content__title-eror {
+    font-size: rem(330);
+    line-height: 100%;
+    color: $firstColor;
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+        font-size: rem(280);
+    }
+    @media (max-width: 551px) {
+        font-size: rem(220);
+    }
+}

@@ -1,0 +1,66 @@
+@use "sass:math";
+
+// Подключение миксинов
+@import 'base/mixins';
+
+// подключение шрифтов
+@import 'base/fonts'; //Шрифты из локальной папки
+// Гугл шрифты
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,600,italic);
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Upright:regular,600,700);
+
+// Базовые шрифты
+$fontFamily: "Open Sans", sans-serif;
+$fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
+
+// Основные цвета
+$mainColor: #0C0B08;
+$firstColor: #DCCA87;
+
+// Ширина контейнера
+$widthContainer: 1300px + 30px;
+$maxWidthContainer : 1680px + 30px;
+$containerWithoutPadding: 1300px;
+
+
+// Брейк-поинты
+$pc: em($maxWidthContainer); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: em(767.98); // Телефоны L
+$mobileSmall: em(479.98); // Телефоны S
+
+
+// Обнуление стилей
+@import 'base/null';
+
+// Подключений стилей библиотек
+@import 'base';
+
+// Подключение глобальних стилей кнопок и тд.
+@import 'ui';
+
+// Подключение стилей отдельних блоков
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/about.scss';
+@import './components/reservation.scss';
+@import './components/menu.scss';
+@import './components/special.scss';
+@import './components/shefs-word.scss';
+@import './components/testimony.scss';
+@import './components/awards.scss';
+@import './components/blogs.scss';
+@import './components/gallery.scss';
+
+
+// Подключение стилей страниц
+@import 'index';
+@import 'bar';
+@import 'service';
+@import 'aboutUs';
+@import 'contactUs';
+@import 'faq';
+@import 'comingSoon';
+@import 'team';
+@import 'blog';
+

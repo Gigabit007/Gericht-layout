@@ -1,0 +1,121 @@
+.shefs__word {
+    overflow: hidden;
+}
+.shefs__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    @media screen and (max-width: 1280px) {
+        display: block;
+    }
+}
+.shefs__content_img {
+    width: 50%;
+    padding: 24px;
+    margin: 0 15px;
+    height: auto;
+    position: relative;
+    @media screen and (max-width: 480px) {
+        padding: 12px;
+    }
+    @media screen and (max-width: 1280px) {
+        max-width: 645px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    & img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        width: 435px;
+        height: 435px;
+        background-color: $firstColor;
+        @media screen and (max-width: 768px) {
+            width: 335px;
+            height: 335px;
+        }
+        @media screen and (max-width: 480px) {
+            width: 235px;
+            height: 235px;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        width: 435px;
+        height: 435px;
+        background-color: $firstColor;
+        @media screen and (max-width: 768px) {
+            width: 335px;
+            height: 335px;
+        }
+        @media screen and (max-width: 480px) {
+            width: 235px;
+            height: 235px;
+        }
+    }
+}
+.shefs__content_text {
+    max-width: 570px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 1280px) {
+        max-width: 75%;
+        align-items: center;
+        text-align: center;
+        margin: 40px auto 0;
+    }
+    @media screen and (max-width: 991px) {
+        max-width: 100%;
+    }
+}
+.shefs__content_header {
+    margin-bottom: 32px;
+    @media screen and (max-width: 991px) {
+        margin-bottom: 0;
+    }
+}
+.shefs__content_description {
+    font-style: italic;
+    position: relative;
+    text-indent: 48px;
+    margin-bottom: 64px;
+    @media screen and (max-width: 991px) {
+        margin-bottom: 32px;
+    }
+}
+.text__quotes {
+    position: absolute;
+    width: 47px;
+    height: 40px;
+    left: 0;
+    top: -8px;
+}
+.content__author {
+    margin-bottom: 64px;
+    @media screen and (max-width: 991px) {
+        margin-bottom: 32px;
+    }
+}
+.content__author_name {
+    color: #DCCA87;
+    margin-bottom: 8px;
+}
+.shefs__signature {
+    height: 80px;
+    width: 235px;
+    object-fit: cover;
+}
