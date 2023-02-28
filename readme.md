@@ -1,3 +1,3 @@
-# my progect
+# Gerisht layout
 
-gg
+npm i
